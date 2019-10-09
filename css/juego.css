@@ -1,0 +1,160 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #FFF;
+  padding: 30px;
+  color: #000;
+}
+
+.col-60 {
+  background: #E84A5F;
+
+}
+
+#flecha{
+  font-size: 60px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/*A partir de acá va lo que hice yo*/
+
+*{
+  box-sizing: border-box;
+  font-family: 'Gochi Hand', cursive, serif;
+}
+#titulo{
+  font-weight: 800;
+  font-size: 44px;
+  color: #f86464;
+}
+#instrucciones{
+  font-size: 25px;
+  color: #6a8e9e;
+  padding: 2px;
+}
+#instrucciones ul{
+  font-size: 20px;
+  margin: 2px;
+}
+#objetivo{
+  font-size: 20px;
+  color: #6a8e9e;
+}
+#ultimo-mov{
+  font-size: 25px;
+  color: #6a8e9e;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2px;
+}
+#ultimo-mov p{
+  margin: 2px;
+}
+#ultimo-mov .texto-centrado{
+  font-size: 35px;
+  color: #f86464;
+}
+#flecha{
+  margin: 2px;
+}
+#objetivo img{
+  width: 70%;
+}
+#juego{
+  background-color:	#f86464;
+  height: 600px;
+  width: 600px;
+}
+.pieza{
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+.pieza img{
+  border: 1px solid black;
+  width: 100%;
+}
+#footer{
+  background-color:	#fffc74;
+  font-size: 15px;
+  width: 100%;
+}
+.cartel_ganador{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99;
+  top: 35%;
+  left: 35%;
+  border: 3px solid	#fffc74;
+  border-radius: 5px;
+  padding: 10px;
+  background-color:	#b6dedc;
+  box-shadow: 10px 10px 5px #6a8e9e;
+}
+.cartel_ganador h2{
+  color: #f86464;
+  text-transform: uppercase;
+  margin: 10px;
+  font-size: 2em;
+}
+.cartel_ganador p{
+  color: #3f6270;
+}
+.boton_aceptar{
+  border: 2px solid	#f1ee36;
+  border-radius: 5px;
+  padding: 10px;
+  background-color:	#7fbebb;
+  color: #3f6270;
+}
+.boton_aceptar:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.hidden{
+  display: none;
+}
